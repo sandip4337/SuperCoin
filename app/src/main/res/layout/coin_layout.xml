@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homecards"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/coinIcon"
+            android:layout_width="97dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="TODO" />
+
+
+        <TextView
+            android:id="@+id/coinName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#BF000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cabin_sketch"
+            android:text="Bitcoin"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

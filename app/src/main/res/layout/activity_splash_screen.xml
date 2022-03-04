@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DA16707C"
+    tools:context=".Activity.SplashScreen">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$upercoin"
+        android:textColor="#E9FBFBFB"
+        android:textSize="65sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crypto Currency Tracker App"
+        android:textColor="#EAF1F1"
+        android:textSize="20sp"
+        android:fontFamily="@font/cabin_sketch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/AppName"
+        app:layout_constraintStart_toStartOf="@+id/AppName"
+        app:layout_constraintTop_toBottomOf="@+id/AppName"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <RelativeLayout
+        android:layout_width="218dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/AppName"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/AppName"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.15">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="31dp"
+            android:layout_height="51dp"
+            android:contentDescription="TODO"
+            android:foregroundGravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bitcoin" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="31dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cryptocurrencyi" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="31dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cryptocurrencyiii" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="31dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/stellarcoin" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="31dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:contentDescription="TODO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cryptocurrencyii" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

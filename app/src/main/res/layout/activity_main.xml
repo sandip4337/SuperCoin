@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/NointernetConnection"-->
+<!--        android:visibility="invisible"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="220dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_marginTop="155dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:src="@drawable/wireless" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="No Internet Connection"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#ED410A"-->
+<!--            android:textSize="26sp"-->
+<!--            android:layout_marginBottom="25dp"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:onClick="noNetworkDialog"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Go To Settings"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:backgroundTint="#68F60404" />-->
+
+<!--    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/AppName"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/cabin_sketch"
+            android:gravity="center"
+            android:text="SuperCoin"
+            android:textAlignment="center"
+            android:textColor="#CEFBF9F9"
+            android:textSize="55sp"
+            android:textStyle="bold" />
+
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/shimmer_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="#DDF8F6F6"
+            android:orientation="vertical"
+            android:layout_below="@+id/AppName"
+            app:shimmer_recycler_item_count="3"
+            app:shimmer_recycler_layout="@layout/placeholder_coin_shimmer" />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
